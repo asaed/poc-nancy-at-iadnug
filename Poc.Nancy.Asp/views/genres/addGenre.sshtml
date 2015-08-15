@@ -1,0 +1,21 @@
+﻿@Master['layout/masterWithStyle.sshtml']
+
+@Section['Content']
+	<h3>
+		<span><a href="/genres">Genres</a><span> &gt; <span>Add Genre<span>
+	</h3>
+
+  <form method="post" action="@Path['~/genres']">
+	<label for="name">Enter genre name to save: </label>
+	<input type="text" name="name" id="name">
+	<input type="submit" value="Add Genre">
+	<br>
+  </form>
+
+  @If.HasMessage
+	<div style="@Model.MessageStyle">@Model.Message</div>
+  @EndIf
+
+  @Partial['genres/genreList.sshtml'];
+
+@EndSection

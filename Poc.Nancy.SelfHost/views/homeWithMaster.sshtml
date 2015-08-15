@@ -1,0 +1,16 @@
+﻿@Master['layout/master.sshtml']
+
+@Section['Content']
+  <h1>POC Nancy: Home with Master Layout</h1>
+
+  <ul>
+    <li>
+      <a href="@Path['~/authors/all']">Authors All</a>
+    </li>
+  </ul>
+
+  	<br/>
+
+	<a href="@Path['~/homeWithStylishMaster']">Next page</a> has a stylish layout.
+
+@EndSection

@@ -1,0 +1,21 @@
+﻿@Master['layout/masterWithStyle.sshtml']
+
+@Section['Content']
+	<h3>
+		<span><a href="/authors">Authors</a><span> &gt; <span>Add Authors<span>
+	</h3>
+
+  <form method="post" action="@Path['~/authors/addAuthor']">
+	<label for="name">Enter author name to save: </label>
+	<input type="text" name="name" id="name">
+	<input type="submit" value="Add Author">
+	<br>
+  </form>
+
+  @If.HasMessage
+	<div style="@Model.MessageStyle">@Model.Message</div>
+  @EndIf
+
+  @Partial['authors/authorList.sshtml'];
+
+@EndSection

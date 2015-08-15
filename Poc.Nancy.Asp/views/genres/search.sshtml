@@ -1,0 +1,18 @@
+﻿@Master['layout/masterWithStyle.sshtml']
+
+@Section['Content']
+	<h3>
+		<span><a href="/genres">Genres</a><span> &gt; <span>Search Genres<span>
+	</h3>
+  
+
+  <form method="get" path="@Path['~/genres/search']">
+	<label for="name">Search by genre name: </label>
+	<input type="text" name="name" id="name">
+	<input type="submit" value="Search">
+	<br>
+  </form>
+
+  @Partial['genres/genreList.sshtml'];
+
+@EndSection

@@ -1,0 +1,30 @@
+﻿@Master['layout/masterWithStyle.sshtml']
+
+@Section['Content']
+  <h3>
+	<span><a href="/authors">Authors</a><span> &gt; <span>Browse All Authors<span>
+  </h3>
+
+  @IfNot.HasAuthors
+	<div id="noAuthorsMsg">Sorry, no authors were found</div>
+  @EndIf
+
+  @If.HasAuthors
+	<table id="authorList" style="width:100%">
+	  <tr>
+		<th>Id</th>
+		<th>Author Name</th> 
+		<th>No. of Publications</th>
+	  </tr>
+	
+	@Each.Authors
+		<tr>
+			<td>@Current.Id</td> 
+			<td>@Current.Name</td>
+			<td>@Current.NumberOfPublications</td>
+		</tr>
+	@EndEach
+
+	</table>
+  @EndIf
+@EndSection

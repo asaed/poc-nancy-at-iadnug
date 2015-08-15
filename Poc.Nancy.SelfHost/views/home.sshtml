@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>POC Nancy</title>
+  </head>
+  <body>
+    <h1>POC Nancy: Home</h1>
+
+    <h4>Congratulations, you made reached POC Nancy</h4>
+    <div>@Model.Message</div>
+	<br/>
+
+	<a href="@Path['~/homeWithMaster']">Next page</a> has a master layout.
+    
+  </body>
+</html>

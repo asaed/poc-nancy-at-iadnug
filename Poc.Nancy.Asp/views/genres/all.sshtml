@@ -1,0 +1,10 @@
+﻿@Master['layout/masterWithStyle.sshtml']
+
+@Section['Content']
+  <h3>
+	<span><a href="/homeWithStylishMaster">Genres</a><span> &gt; <span>Browse All Genres<span>
+  </h3>
+
+   @Partial['genres/genreList.sshtml'];
+
+@EndSection

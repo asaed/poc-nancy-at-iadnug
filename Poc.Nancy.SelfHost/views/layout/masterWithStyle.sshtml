@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>POC Nancy</title>
+	    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="/Content/normalize.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/Content/theme.css"> -->
+  </head>
+  <body>
+	<div id="main">
+		<header>
+			<div id="logo">
+				<div id="logo_text">
+					<h1><a href="/"><span class="logo_colour">POC Nancy</span></a></h1>
+					<h2>simple demo project for NancyFx</h2>
+				</div>
+			</div>
+			<nav>
+				<div id="menu_container">
+					<ul class="sf-menu" id="nav">
+						<li><a href="/home">Home Simple</a></li>
+						<li><a href="/homeWithMaster">Home with Master Layout</a></li>
+						<li><a href="/homeWithStylishMaster">Home with Stylish Layout </a></li>
+						<li><a href="/authors">Authors</a></li>
+						<li><a href="/genres">Genres</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div id="site_content">
+			<div class="content">
+				@Section['Content'];
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

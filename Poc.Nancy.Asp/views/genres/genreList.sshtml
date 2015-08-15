@@ -1,0 +1,24 @@
+﻿@IfNot.HasGenres
+	<div>Sorry, no genres were found</div>
+	<br/>
+@EndIf
+
+@If.HasGenres
+	<table style="width:100%">
+		<tr>
+		<th>Id</th>
+		<th>Genre Name</th> 
+		<th>No. of Available Titles</th>
+		</tr>
+	
+	@Each.Genres
+		<tr>
+			<td>@Current.Id</td> 
+			<td>@Current.Name</td>
+			<td>@Current.NumberOfAvailableTitles</td>
+		</tr>
+	@EndEach
+
+	</table>
+@EndIf
+

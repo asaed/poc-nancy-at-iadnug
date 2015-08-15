@@ -1,0 +1,18 @@
+﻿@Master['layout/masterWithStyle.sshtml']
+
+@Section['Content']
+	<h3>
+		<span><a href="/authors">Authors</a><span> &gt; <span>Search Authors<span>
+	</h3>
+  
+
+  <form method="get" path="@Path['~/authors/search']">
+	<label for="authorName">Search by author's name: </label>
+	<input type="text" name="authorName" id="authorName">
+	<input type="submit" value="Search">
+	<br>
+  </form>
+
+  @Partial['authors/authorList.sshtml'];
+
+@EndSection
