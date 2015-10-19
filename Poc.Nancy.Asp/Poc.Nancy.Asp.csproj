@@ -46,6 +46,7 @@
     <Content Include="Content\normalize.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\theme.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

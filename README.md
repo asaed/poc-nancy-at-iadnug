@@ -32,3 +32,4 @@ Here is a list of great resources about Nancy:
 
 ## Credits
 * [normalize.css](http://github.com/necolas/normalize.css) by [necolas](http://github.com/necolas) is licensed under [MIT License](http://opensource.org/licenses/MIT)
+* [CSS3_contrast](http://www.css3templates.co.uk/templates/CSS3_contrast/index.html) by [css3templates.co.uk](http://www.css3templates.co.uk/) is licensed under [Creative Commons Attribution 3.0 License](http://creativecommons.org/licenses/by/3.0/)
